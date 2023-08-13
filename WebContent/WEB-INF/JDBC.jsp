@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"%>
+<%@ page import = "java.sql.*"%>
+<%
+	//1. JDBC Driver 로딩하기
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+/* 
+	//2. DB 서버 접속하기
+	String url = "jdbc:oracle:thin:@localhost:1521:xe";
+	Connection conn = DriverManager.getConnection(url, "system", "1111");
+	
+	//3. Statement or PreparedStatement 객체 생성하기
+	Statement stmt = conn.createStatement();
+	
+	//4. SQL 실행
+	stmt.executeUpdate("create table test(id varchar2(5), pwd varchar2(5))");
+	
+	//5. 자원해제
+	stmt.close();
+	conn.close(); //연결해제 */
+%>
+OK
